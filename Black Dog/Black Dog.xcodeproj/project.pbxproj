@@ -14,6 +14,12 @@
 		C07E15371FE3A08800FF3BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07E15351FE3A08800FF3BDA /* LaunchScreen.storyboard */; };
 		C07E15421FE3A08800FF3BDA /* Black_DogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E15411FE3A08800FF3BDA /* Black_DogTests.swift */; };
 		C07E154D1FE3A08900FF3BDA /* Black_DogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E154C1FE3A08900FF3BDA /* Black_DogUITests.swift */; };
+		C07E15611FE3A2CC00FF3BDA /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E15601FE3A2CC00FF3BDA /* IntentHandler.swift */; };
+		C07E156A1FE3A2CC00FF3BDA /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07E15691FE3A2CC00FF3BDA /* IntentsUI.framework */; };
+		C07E156D1FE3A2CC00FF3BDA /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07E156C1FE3A2CC00FF3BDA /* IntentViewController.swift */; };
+		C07E15701FE3A2CC00FF3BDA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07E156E1FE3A2CC00FF3BDA /* MainInterface.storyboard */; };
+		C07E15741FE3A2CC00FF3BDA /* DogintentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C07E15671FE3A2CC00FF3BDA /* DogintentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C07E15771FE3A2CC00FF3BDA /* Dogintents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C07E155E1FE3A2CC00FF3BDA /* Dogintents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,36 @@
 			remoteGlobalIDString = C07E15281FE3A08800FF3BDA;
 			remoteInfo = "Black Dog";
 		};
+		C07E15721FE3A2CC00FF3BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07E15211FE3A08800FF3BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C07E15661FE3A2CC00FF3BDA;
+			remoteInfo = DogintentsUI;
+		};
+		C07E15751FE3A2CC00FF3BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07E15211FE3A08800FF3BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C07E155D1FE3A2CC00FF3BDA;
+			remoteInfo = Dogintents;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C07E157E1FE3A2CC00FF3BDA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C07E15741FE3A2CC00FF3BDA /* DogintentsUI.appex in Embed App Extensions */,
+				C07E15771FE3A2CC00FF3BDA /* Dogintents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C07E15291FE3A08800FF3BDA /* Black Dog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Dog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +82,14 @@
 		C07E15481FE3A08900FF3BDA /* Black DogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Black DogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07E154C1FE3A08900FF3BDA /* Black_DogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black_DogUITests.swift; sourceTree = "<group>"; };
 		C07E154E1FE3A08900FF3BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07E155E1FE3A2CC00FF3BDA /* Dogintents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Dogintents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07E15601FE3A2CC00FF3BDA /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		C07E15621FE3A2CC00FF3BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07E15671FE3A2CC00FF3BDA /* DogintentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DogintentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07E15691FE3A2CC00FF3BDA /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		C07E156C1FE3A2CC00FF3BDA /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		C07E156F1FE3A2CC00FF3BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C07E15711FE3A2CC00FF3BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +114,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C07E155B1FE3A2CC00FF3BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07E15641FE3A2CC00FF3BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07E156A1FE3A2CC00FF3BDA /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +138,9 @@
 				C07E152B1FE3A08800FF3BDA /* Black Dog */,
 				C07E15401FE3A08800FF3BDA /* Black DogTests */,
 				C07E154B1FE3A08900FF3BDA /* Black DogUITests */,
+				C07E155F1FE3A2CC00FF3BDA /* Dogintents */,
+				C07E156B1FE3A2CC00FF3BDA /* DogintentsUI */,
+				C07E15681FE3A2CC00FF3BDA /* Frameworks */,
 				C07E152A1FE3A08800FF3BDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +151,8 @@
 				C07E15291FE3A08800FF3BDA /* Black Dog.app */,
 				C07E153D1FE3A08800FF3BDA /* Black DogTests.xctest */,
 				C07E15481FE3A08900FF3BDA /* Black DogUITests.xctest */,
+				C07E155E1FE3A2CC00FF3BDA /* Dogintents.appex */,
+				C07E15671FE3A2CC00FF3BDA /* DogintentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +188,33 @@
 			path = "Black DogUITests";
 			sourceTree = "<group>";
 		};
+		C07E155F1FE3A2CC00FF3BDA /* Dogintents */ = {
+			isa = PBXGroup;
+			children = (
+				C07E15601FE3A2CC00FF3BDA /* IntentHandler.swift */,
+				C07E15621FE3A2CC00FF3BDA /* Info.plist */,
+			);
+			path = Dogintents;
+			sourceTree = "<group>";
+		};
+		C07E15681FE3A2CC00FF3BDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C07E15691FE3A2CC00FF3BDA /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C07E156B1FE3A2CC00FF3BDA /* DogintentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				C07E156C1FE3A2CC00FF3BDA /* IntentViewController.swift */,
+				C07E156E1FE3A2CC00FF3BDA /* MainInterface.storyboard */,
+				C07E15711FE3A2CC00FF3BDA /* Info.plist */,
+			);
+			path = DogintentsUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +225,13 @@
 				C07E15251FE3A08800FF3BDA /* Sources */,
 				C07E15261FE3A08800FF3BDA /* Frameworks */,
 				C07E15271FE3A08800FF3BDA /* Resources */,
+				C07E157E1FE3A2CC00FF3BDA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C07E15731FE3A2CC00FF3BDA /* PBXTargetDependency */,
+				C07E15761FE3A2CC00FF3BDA /* PBXTargetDependency */,
 			);
 			name = "Black Dog";
 			productName = "Black Dog";
@@ -181,6 +274,40 @@
 			productReference = C07E15481FE3A08900FF3BDA /* Black DogUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C07E155D1FE3A2CC00FF3BDA /* Dogintents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07E157B1FE3A2CC00FF3BDA /* Build configuration list for PBXNativeTarget "Dogintents" */;
+			buildPhases = (
+				C07E155A1FE3A2CC00FF3BDA /* Sources */,
+				C07E155B1FE3A2CC00FF3BDA /* Frameworks */,
+				C07E155C1FE3A2CC00FF3BDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dogintents;
+			productName = Dogintents;
+			productReference = C07E155E1FE3A2CC00FF3BDA /* Dogintents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C07E15661FE3A2CC00FF3BDA /* DogintentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07E15781FE3A2CC00FF3BDA /* Build configuration list for PBXNativeTarget "DogintentsUI" */;
+			buildPhases = (
+				C07E15631FE3A2CC00FF3BDA /* Sources */,
+				C07E15641FE3A2CC00FF3BDA /* Frameworks */,
+				C07E15651FE3A2CC00FF3BDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogintentsUI;
+			productName = DogintentsUI;
+			productReference = C07E15671FE3A2CC00FF3BDA /* DogintentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +332,14 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = C07E15281FE3A08800FF3BDA;
 					};
+					C07E155D1FE3A2CC00FF3BDA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C07E15661FE3A2CC00FF3BDA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = C07E15241FE3A08800FF3BDA /* Build configuration list for PBXProject "Black Dog" */;
@@ -223,6 +358,8 @@
 				C07E15281FE3A08800FF3BDA /* Black Dog */,
 				C07E153C1FE3A08800FF3BDA /* Black DogTests */,
 				C07E15471FE3A08900FF3BDA /* Black DogUITests */,
+				C07E155D1FE3A2CC00FF3BDA /* Dogintents */,
+				C07E15661FE3A2CC00FF3BDA /* DogintentsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +386,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07E155C1FE3A2CC00FF3BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07E15651FE3A2CC00FF3BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07E15701FE3A2CC00FF3BDA /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +432,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C07E155A1FE3A2CC00FF3BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07E15611FE3A2CC00FF3BDA /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07E15631FE3A2CC00FF3BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07E156D1FE3A2CC00FF3BDA /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +460,16 @@
 			isa = PBXTargetDependency;
 			target = C07E15281FE3A08800FF3BDA /* Black Dog */;
 			targetProxy = C07E15491FE3A08900FF3BDA /* PBXContainerItemProxy */;
+		};
+		C07E15731FE3A2CC00FF3BDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C07E15661FE3A2CC00FF3BDA /* DogintentsUI */;
+			targetProxy = C07E15721FE3A2CC00FF3BDA /* PBXContainerItemProxy */;
+		};
+		C07E15761FE3A2CC00FF3BDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C07E155D1FE3A2CC00FF3BDA /* Dogintents */;
+			targetProxy = C07E15751FE3A2CC00FF3BDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +488,14 @@
 				C07E15361FE3A08800FF3BDA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C07E156E1FE3A2CC00FF3BDA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07E156F1FE3A2CC00FF3BDA /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -425,6 +611,7 @@
 		C07E15521FE3A08900FF3BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Black Dog/Info.plist";
@@ -439,6 +626,7 @@
 		C07E15531FE3A08900FF3BDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Black Dog/Info.plist";
@@ -512,6 +700,62 @@
 			};
 			name = Release;
 		};
+		C07E15791FE3A2CC00FF3BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DogintentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appmosphere.blackdog.Black-Dog.DogintentsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C07E157A1FE3A2CC00FF3BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DogintentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appmosphere.blackdog.Black-Dog.DogintentsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C07E157C1FE3A2CC00FF3BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Dogintents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appmosphere.blackdog.Black-Dog.Dogintents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C07E157D1FE3A2CC00FF3BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Dogintents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appmosphere.blackdog.Black-Dog.Dogintents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +791,24 @@
 			buildConfigurations = (
 				C07E15581FE3A08900FF3BDA /* Debug */,
 				C07E15591FE3A08900FF3BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07E15781FE3A2CC00FF3BDA /* Build configuration list for PBXNativeTarget "DogintentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07E15791FE3A2CC00FF3BDA /* Debug */,
+				C07E157A1FE3A2CC00FF3BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07E157B1FE3A2CC00FF3BDA /* Build configuration list for PBXNativeTarget "Dogintents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07E157C1FE3A2CC00FF3BDA /* Debug */,
+				C07E157D1FE3A2CC00FF3BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
